@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'Biztos Alkuszom',
+      title: 'NSZV Takarítás',
       htmlAttrs: {
         lang: 'hu',
       },
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            'Személyre szabott biztosítási megoldások mindenkinek. Megbízható alkusz a biztosítási piacon.',
+            'Profi takarítás Budapesten: szobák, irodaházak, Airbnb lakások és egyéb ingatlanok tisztítása gyorsan, precízen és megbízhatóan. Kiemelkedő minőség, rugalmas időpontok, elégedett ügyfelek! Keressen bizalommal!',
         },
         { name: 'format-detection', content: 'telephone=no' },
         { hid: 'robots', name: 'robots', content: 'index, follow' },
