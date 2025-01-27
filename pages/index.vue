@@ -154,12 +154,12 @@
           />
         </div>
         <div class="contact-form__input-group">
-          <select class="contact-form__select" required>
-            <option value="" disabled selected>Takarítás típusa</option>
-            <option value="iroda">Irodatakarítás</option>
-            <option value="lakas">Lakástakarítás</option>
-            <option value="premium">Prémium takarítás</option>
-          </select>
+          <input
+            type="text"
+            class="contact-form__input"
+            placeholder="Takarítás típusa"
+            required
+          />
         </div>
         <div class="contact-form__input-group">
           <button type="submit" class="contact-form__button">Küldés</button>
