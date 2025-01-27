@@ -1,14 +1,14 @@
 <script setup>
 const leftLinks = [
   { name: 'Galéria', path: '/' },
-  { name: 'Szolgáltatások', path: '/szolgaltatasok' },
-  { name: 'Referenciák', path: '/dokumentumok' },
+  { name: 'Szolgáltatások', path: '/' },
+  { name: 'Referenciák', path: '/' },
 ]
 
 const rightLinks = [
-  { name: 'Rólunk', path: '/dokumentumok' },
-  { name: 'Kapcsolat', path: '/kapcsolat' },
-  { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
+  { name: 'Rólunk', path: '/' },
+  { name: 'Kapcsolat', path: '/' },
+  { name: 'Ajánlatkérés', path: '/' },
 ]
 
 const isMenuOpen = ref(false)
@@ -21,7 +21,9 @@ const isMenuOpen = ref(false)
       <nav class="desktop-menu">
         <ul class="left-menu">
           <li v-for="link in leftLinks" :key="link.path">
-            <NuxtLink class="text-color-w" :to="link.path">{{ link.name }}</NuxtLink>
+            <NuxtLink class="text-color-w" :to="link.path">{{
+              link.name
+            }}</NuxtLink>
           </li>
         </ul>
 
@@ -38,7 +40,9 @@ const isMenuOpen = ref(false)
 
         <ul class="right-menu">
           <li v-for="link in rightLinks" :key="link.path">
-            <NuxtLink class="text-color-w" :to="link.path">{{ link.name }}</NuxtLink>
+            <NuxtLink class="text-color-w" :to="link.path">{{
+              link.name
+            }}</NuxtLink>
           </li>
         </ul>
       </nav>
@@ -57,8 +61,8 @@ const isMenuOpen = ref(false)
       <!-- Mobil menü -->
       <nav :class="['mobile-menu', { active: isMenuOpen }]">
         <ul>
-          <li 
-            v-for="(link, index) in [...leftLinks, ...rightLinks]" 
+          <li
+            v-for="(link, index) in [...leftLinks, ...rightLinks]"
             :key="link.path"
             :style="{ '--i': index }"
           >
@@ -102,14 +106,14 @@ const isMenuOpen = ref(false)
   border: none;
   cursor: pointer;
   padding: 0.7em;
-  background-color: #001647;
+  background-color: #ffea9b;
   z-index: 1000;
 }
 
 .bar {
   height: 0.23em;
   width: 100%;
-  background-color: #fff;
+  background-color: #000;
   transition: all 0.3s ease;
 }
 
@@ -125,19 +129,18 @@ const isMenuOpen = ref(false)
   transform: rotate(-45deg) translate(5px, -5px);
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 1199px) {
   .desktop-menu {
     display: none;
   }
-  
+
   .mobile-menu {
     position: fixed;
     top: 0;
     right: -100%;
     width: 60%;
     height: 100%;
-    background: #001647;
+    background: #ffea9b;
     padding: 1rem;
     transition: right 0.3s ease-in-out;
     z-index: 999;
@@ -165,20 +168,20 @@ const isMenuOpen = ref(false)
     opacity: 1;
     transform: translateX(0);
   }
-  
+
   .mobile-menu a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
     font-size: 1.1rem;
+    font-weight: 500;
   }
 }
 
-
-@media (min-width: 769px) {
+@media (min-width: 1199px) {
   .hamburger {
     display: none;
   }
-  
+
   .mobile-menu {
     display: none;
   }

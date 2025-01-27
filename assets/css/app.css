@@ -50,7 +50,7 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(100deg, #001647, #001647, #001647);
+  background: linear-gradient(100deg, #ffea9b, #ffea9b, #ffea9b);
   background-size: 180% 180%;
   width: 0;
   height: 25%;
@@ -292,7 +292,6 @@ ul {
   margin: 0;
   justify-content: end;
 }
-
 
 .logo-box__img {
   width: 10em;
@@ -1022,20 +1021,46 @@ select:focus {
   }
 
   .split-section__image-content__top {
-    width: 80px;
-    height: 80px;
+    width: 8em;
+    height: 8em;
   }
-  .about_section .split-section__image {
-    padding: 20px 55px;
+  .split-section__top__imgBox__img {
+    width: 100%;
+    margin-left: 0;
   }
   .about_section .split-section__text {
-    padding: 0 55px;
+    padding: 0 1em;
+  }
+
+  .split-section__container__crown {
+    margin: 0 5%;
+    background: #000;
+    padding: 0.5em;
+  }
+
+  .split-section__title__top {
+    font-size: 1.3rem;
+  }
+
+  .split-section.about_section {
+    padding: 5%;
+  }
+
+  .split-section__top {
+    padding: 0 5%;
   }
 
   .services {
     flex-direction: column;
-    padding: 55px;
+    padding: 1em;
     gap: 4rem;
+  }
+
+  .services__title,
+  .split-section__title,
+  .contact-form__title,
+  .info-blocks__titleTop {
+    font-size: 1.7rem;
   }
 
   .services__item {
@@ -1043,7 +1068,7 @@ select:focus {
   }
 
   .split-section__inside {
-    padding: 30px 55px;
+    padding: 1.5em;
   }
 
   .split-section__container {
@@ -1052,7 +1077,10 @@ select:focus {
 
   .info-blocks__container {
     flex-direction: column;
-    padding: 0 55px;
+  }
+
+  .info-blocks {
+    padding: 8% 5% 0 5%;
   }
 
   .info-blocks__item {
@@ -1060,11 +1088,11 @@ select:focus {
   }
 
   .contact-form {
-    padding: 4rem 35px;
+    padding: 5%;
   }
   .contact-form__container {
-    padding: 25px 55px;
-    margin: 0 15px;
+    padding: 3em 1.5em;
+    margin: 0;
   }
 
   .footer__card {
@@ -1072,6 +1100,10 @@ select:focus {
     text-align: center;
     height: auto;
     padding: 25px;
+  }
+
+  .footer {
+    padding: 5%;
   }
 
   .footer__info {
@@ -1102,15 +1134,11 @@ select:focus {
 
 @media (min-width: 300px) and (max-width: 400px) {
   .split-section__title__top {
-    font-size: 14px;
+    font-size: 1.3rem;
   }
 
   .split-section__description__top {
     font-size: 12px;
-  }
-
-  .services__title {
-    font-size: 1.2em;
   }
 
   .services__description {
@@ -1119,10 +1147,6 @@ select:focus {
 
   .services__list-item {
     font-size: 15px;
-  }
-
-  .contact-form__title {
-    font-size: 22px;
   }
 
   .contact-form__description {
@@ -1314,6 +1338,7 @@ select:focus {
     padding: 2em;
     flex-direction: row-reverse;
     align-items: center;
+    margin: 0 5%;
   }
   .header-content__logo-box,
   .header-content__nav-box {
