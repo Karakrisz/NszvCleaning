@@ -1,11 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { fetchPosts, truncateContent } from '~/utils/js/utils'
+
+const itemsPost = await fetchPosts()
+const latestPosts = itemsPost.value?.slice(-3) || []
+</script>
+
 <template>
   <section class="split-section__top">
     <div class="split-section__inside">
       <div class="split-section__top__imgBox text-center">
         <img
           src="/img/header/bg.svg"
-          alt=""
+          alt="NSZV takarítás"
           class="split-section__top__imgBox__img"
         />
       </div>
@@ -13,14 +19,14 @@
         <div class="split-section__image__top">
           <img
             src="/img/blocks/top-btn.svg"
-            alt=""
+            alt="NSZV takarítás"
             class="split-section__image-content__top"
           />
         </div>
         <div class="split-section__text_top">
-          <h2 class="split-section__title__top">
+          <h1 class="split-section__title__top">
             Foglaljon prémium takarítót egy gombnyomással
-          </h2>
+          </h1>
           <p class="split-section__description__top">
             Bízza ránk otthona vagy irodája tisztaságát! Professzionális
             csapatunk garantálja a makulátlan eredményt, legyen szó mindennapi
@@ -35,7 +41,7 @@
     <div class="services d-flex">
       <div class="services__item services__item--office">
         <div class="services__icon services__icon--crown"></div>
-        <h3 class="services__title">Iroda takarítás</h3>
+        <h2 class="services__title">Iroda takarítás</h2>
         <p class="services__description">
           Professzionális irodatakarítás, amely biztosítja a kellemes
           munkakörnyezetet. A csapatunk garantálja, hogy Ön az üzletvitelre
@@ -52,7 +58,7 @@
 
       <div class="services__item services__item--premium">
         <div class="services__icon services__icon--crown"></div>
-        <h3 class="services__title">Prémium takarítás</h3>
+        <h2 class="services__title">Prémium takarítás</h2>
         <p class="services__description">
           Magas színvonalú, személyre szabott takarítási megoldások az exkluzív
           igények kiszolgálására.
@@ -70,7 +76,7 @@
 
       <div class="services__item services__item--home">
         <div class="services__icon services__icon--crown"></div>
-        <h3 class="services__title">Lakás takarítás</h3>
+        <h2 class="services__title">Lakás takarítás</h2>
         <p class="services__description">
           Professzionális lakástakarítás, amely biztosítja a tiszta és rendezett
           munkakörnyezetet. A csapatunk a hatékonyságra és a részletekre
@@ -91,12 +97,12 @@
       <div class="split-section__image">
         <img
           src="/img/blocks/aboutimg.jpeg"
-          alt=""
+          alt="NSZV takarítás"
           class="split-section__image-content"
         />
       </div>
       <div class="split-section__text">
-        <h2 class="split-section__title">Rólunk</h2>
+        <h4 class="split-section__title">Rólunk</h4>
         <p class="split-section__about_description">
           Az N.Sz.V Cleaning 2021 óta áll ügyfelei szolgálatában, hogy
           otthonaik, irodáik és egyedi igényekkel rendelkező helyszíneik mindig
@@ -124,7 +130,7 @@
   </section>
   <section class="contact-form">
     <div class="contact-form__container">
-      <h2 class="contact-form__title">Tegyük együtt tisztábbá a világot!</h2>
+      <h5 class="contact-form__title">Tegyük együtt tisztábbá a világot!</h5>
       <p class="contact-form__description">
         Keressen minket még ma, és kérjen személyre szabott ajánlatot!
       </p>
@@ -162,7 +168,14 @@
           />
         </div>
         <div class="contact-form__input-group">
-          <button type="submit" class="contact-form__button">Küldés</button>
+          <button type="submit" class="contact-form__button">
+            <span class="contact-form__button-text">Küldés</span>
+            <NuxtImg
+              class="contact-form__button-icon"
+              src="/img/blocks/mail.svg"
+              alt="NSZV takarítás"
+            />
+          </button>
         </div>
       </form>
     </div>
@@ -170,75 +183,40 @@
 
   <section class="info-blocks">
     <div class="info-blocks__container">
-      <h2 class="info-blocks__titleTop">Blog</h2>
+      <h6 class="info-blocks__titleTop">Blog</h6>
     </div>
     <div class="info-blocks__container d-flex">
-      <div class="info-blocks__item">
-        <div class="info-blocks__image-wrapper">
-          <a href="#"
-            ><img src="/img/blocks/blog1.png" alt="" class="info-blocks__image"
-          /></a>
-        </div>
-
-        <div class="info-blocks__content">
-          <h3 class="info-blocks__title">
-            <a href="#">5 Profi Takarítási Tipp</a>
-          </h3>
-          <p class="info-blocks__text">
-            Ismerje meg, hogyan érhet el gyors és hatékony tisztaságot
-            otthonában vagy irodájában.
-          </p>
-          <div class="info-blocks__arrow">
-            <img src="/img/blocks/arrowDown.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="info-blocks__item">
-        <div class="info-blocks__image-wrapper">
-          <a href=""
-            ><img
-              src="/img/blocks/blog2.jpeg"
-              alt=""
+      <div
+        v-for="post in latestPosts"
+        :key="post.slug"
+        class="info-blocks__item"
+      >
+        <NuxtLink
+          class="blog-box__link-box__Nuxtlink"
+          :to="`/posts/${post.slug}`"
+        >
+          <div class="info-blocks__image-wrapper">
+            <NuxtImg
+              :src="`${$config.public.apiBaseUrl}/storage/${post.image}`"
+              alt="{{ post.title }}"
               class="info-blocks__image"
-          /></a>
-        </div>
-
-        <div class="info-blocks__content">
-          <h3 class="info-blocks__title">
-            <a href="#">Miért Válasszon Profi Takarítót?</a>
-          </h3>
-          <p class="info-blocks__text">
-            Három nyomós érv, amiért megéri szakértőkre bízni a tisztaságot.
-          </p>
-          <div class="info-blocks__arrow">
-            <img src="/img/blocks/arrowDown.svg" alt="" />
+            />
           </div>
-        </div>
-      </div>
 
-      <div class="info-blocks__item">
-        <div class="info-blocks__image-wrapper">
-          <a href="#"
-            ><img
-              src="/img/blocks/blog3.jpeg"
-              alt=""
-              class="info-blocks__image"
-          /></a>
-        </div>
-
-        <div class="info-blocks__content">
-          <h3 class="info-blocks__title">
-            <a href="#">Tiszta Airbnb, Elégedett Vendégek</a>
-          </h3>
-          <p class="info-blocks__text">
-            Fedezze fel a tökéletes első benyomás titkát a vendéglátásban.
-          </p>
-          <div class="info-blocks__arrow">
-            <img src="/img/blocks/arrowDown.svg" alt="" />
+          <div class="info-blocks__content">
+            <h3 class="info-blocks__title">{{ post.title }}</h3>
+            <p
+              class="info-blocks__text"
+              v-html="truncateContent(post.body, 100)"
+            />
+            <div class="info-blocks__arrow">
+              <NuxtImg src="/img/blocks/arrowDown.svg" alt="NSZV takarítás" />
+            </div>
           </div>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
+
+

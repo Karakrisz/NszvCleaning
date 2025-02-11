@@ -1,5 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  runtimeConfig: {
+    public: {
+      apiBaseUrl: process.env.API_BASE_URL || 'https://api.nszvtakaritas.hu',
+    },
+  },
   devtools: { enabled: true },
   css: ['~/assets/css/app.css'],
   ssr: true,
@@ -17,7 +22,7 @@ export default defineNuxtConfig({
           hid: 'description',
           name: 'description',
           content:
-            'Profi takarítás Budapesten: szobák, irodaházak, Airbnb lakások és egyéb ingatlanok tisztítása gyorsan, precízen és megbízhatóan. Kiemelkedő minőség, rugalmas időpontok, elégedett ügyfelek! Keressen bizalommal!',
+            'Lakás takarítás Budapesten: szobák, irodaházak, Airbnb lakások és egyéb ingatlanok tisztítása gyorsan, precízen és megbízhatóan.',
         },
         { name: 'format-detection', content: 'telephone=no' },
         { hid: 'robots', name: 'robots', content: 'index, follow' },

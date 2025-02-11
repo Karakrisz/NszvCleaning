@@ -58,7 +58,7 @@ const footerLinks = [
       </p>
     </div>
     <div class="footer__brand">
-      <img class="footer__brand-text" src="/img/blocks/DSS_Icon.svg" alt="">
+      <img class="footer__brand-text" src="/img/blocks/DSS_Icon.svg" alt="NSZV takarítás">
     </div>
   </div>
   <nav class="footer__nav">

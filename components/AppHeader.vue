@@ -32,7 +32,7 @@ const isMenuOpen = ref(false)
             <NuxtImg
               class="logo-box__img"
               src="/img/header/menu-logo.svg"
-              alt="The King of Cleaning"
+              alt="NSZV takarítás"
               height="100%"
             />
           </NuxtLink>
@@ -40,9 +40,15 @@ const isMenuOpen = ref(false)
 
         <ul class="right-menu">
           <li v-for="link in rightLinks" :key="link.path">
-            <NuxtLink class="text-color-w" :to="link.path">{{
-              link.name
-            }}</NuxtLink>
+            <NuxtLink
+              :class="[
+                'text-color-w',
+                link.name === 'Ajánlatkérés' ? 'cta-button' : '',
+              ]"
+              :to="link.path"
+            >
+              {{ link.name }}
+            </NuxtLink>
           </li>
         </ul>
       </nav>
@@ -66,7 +72,11 @@ const isMenuOpen = ref(false)
             :key="link.path"
             :style="{ '--i': index }"
           >
-            <NuxtLink :to="link.path" @click="isMenuOpen = false">
+            <NuxtLink
+              :to="link.path"
+              @click="isMenuOpen = false"
+              :class="link.name === 'Ajánlatkérés' ? 'cta-button' : ''"
+            >
               {{ link.name }}
             </NuxtLink>
           </li>
@@ -77,6 +87,46 @@ const isMenuOpen = ref(false)
 </template>
 
 <style scoped>
+.cta-button {
+  border-radius: 2em;
+  animation: pulse 1s infinite;
+  transform-origin: center;
+  display: inline-block;
+  background: linear-gradient(
+    91deg,
+    #d69c47 -83.45%,
+    #ffe68f -28.24%,
+    #e8bc66 -9.84%,
+    #d69c47 6.27%,
+    #ecc675 38.47%,
+    #ffeb9e 70.68%,
+    #977943 102.88%,
+    #603d13 121.29%,
+    #7a5118 128.19%,
+    #8c5e1c 135.09%,
+    #d69c47 146.59%
+  );
+  color: #0e0e0e;
+  font-weight: 600;
+  padding: 0.7em 2em;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.cta-button:hover {
+  animation-play-state: paused;
+}
+
 .desktop-menu {
   display: flex;
   justify-content: center;
@@ -91,6 +141,7 @@ const isMenuOpen = ref(false)
   list-style: none;
   padding: 0;
   margin: 0;
+  align-items: center;
 }
 
 .logo-box {
