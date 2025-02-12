@@ -1,6 +1,6 @@
 <script setup>
 const leftLinks = [
-  { name: 'Galéria', path: '/' },
+  { name: 'Kezdőlap', path: '/' },
   { name: 'Szolgáltatások', path: '/' },
   { name: 'Referenciák', path: '/' },
 ]
@@ -8,7 +8,7 @@ const leftLinks = [
 const rightLinks = [
   { name: 'Rólunk', path: '/' },
   { name: 'Kapcsolat', path: '/' },
-  { name: 'Ajánlatkérés', path: '/' },
+  { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
 ]
 
 const isMenuOpen = ref(false)
@@ -109,18 +109,6 @@ const isMenuOpen = ref(false)
   color: #0e0e0e;
   font-weight: 600;
   padding: 0.7em 2em;
-}
-
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(1);
-  }
 }
 
 .cta-button:hover {

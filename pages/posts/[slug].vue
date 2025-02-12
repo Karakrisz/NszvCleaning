@@ -45,7 +45,7 @@ onUnmounted(() => {
 
         <NuxtLink to="/" class="go-back-button">
           <span class="go-back-button__icon">&#8592;</span>
-          <span class="go-back-button__text">Vissza a főoldalra</span>
+          <span class="go-back-button__text">Ajánlatkérés</span>
         </NuxtLink>
       </div>
     </section>

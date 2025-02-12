@@ -168,6 +168,9 @@ const latestPosts = itemsPost.value?.slice(-3) || []
           />
         </div>
         <div class="contact-form__input-group">
+          <p class="contact-form__input-group-description text-color-w">
+            A küldés gombra kattintva elfogadja az Adatvédelmi Tájékoztatót
+          </p>
           <button type="submit" class="contact-form__button">
             <span class="contact-form__button-text">Küldés</span>
             <NuxtImg
@@ -218,5 +221,3 @@ const latestPosts = itemsPost.value?.slice(-3) || []
     </div>
   </section>
 </template>
-
-

@@ -708,6 +708,11 @@ select:focus {
   margin-left: 0.3em;
 }
 
+.contact-form__input-group-description {
+  font-size: 1rem;
+  margin-bottom: 2em;
+}
+
 .info-blocks {
   padding: 2.5em 7% 4em 7%;
   background: var(--Primary, #ffeb9e);
@@ -924,7 +929,29 @@ select:focus {
   font-size: 1.3rem;
 }
 
+.contact-form--subpage-format {
+  padding: 0;
+  margin: 0 10%;
+}
+
+.contact-form__container--subpage-format {
+  padding: 4em 10em;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .go-back-button {
+  animation: pulse 1s infinite;
   align-items: center;
   background: linear-gradient(
     91deg,
