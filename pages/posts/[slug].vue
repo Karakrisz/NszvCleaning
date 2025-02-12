@@ -43,7 +43,7 @@ onUnmounted(() => {
         />
         <div class="text-white blog-text-content" v-html="post.body"></div>
 
-        <NuxtLink to="/" class="go-back-button">
+        <NuxtLink to="/ajanlatkeres" class="go-back-button">
           <span class="go-back-button__icon">&#8592;</span>
           <span class="go-back-button__text">Ajánlatkérés</span>
         </NuxtLink>
