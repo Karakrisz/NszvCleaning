@@ -235,6 +235,7 @@ ul {
     opacity: 1;
   }
 }
+
 /********************   Animation formating end **********************/
 
 /********************  Identical instructions start **********************/
@@ -713,6 +714,30 @@ select:focus {
   margin-bottom: 2em;
 }
 
+.confirmation-message {
+  margin-top: 2em;
+  background: linear-gradient(
+      89deg,
+      #d69c47 -13.03%,
+      #ffe68f 14.8%,
+      #e8bc66 24.07%,
+      #d69c47 32.19%,
+      #ecc675 48.42%,
+      #ffeb9e 64.65%,
+      #d69c47 102.91%
+    ),
+    #d9d9d9;
+  animation: slideInFromBottom 0.5s ease-out;
+  width: max-content;
+  margin: 2em auto;
+}
+
+.confirmation-message__p {
+  padding: 1em;
+  width: max-content;
+  margin: auto;
+}
+
 .info-blocks {
   padding: 2.5em 7% 4em 7%;
   background: var(--Primary, #ffeb9e);
@@ -1010,6 +1035,11 @@ select:focus {
   z-index: 1;
 }
 
+.aszf-content {
+  background: #000;
+  padding: 2em 17%;
+}
+
 @media (min-width: 1200px) and (max-width: 1400px) {
   .split-section__inside {
     padding: 40px 50px;
@@ -1254,6 +1284,10 @@ select:focus {
     margin: 0;
   }
 
+  .confirmation-message {
+    width: 100%;
+  }
+
   .footer__card {
     flex-direction: column;
     text-align: center;
@@ -1295,6 +1329,12 @@ select:focus {
   }
   .subpage-content {
     padding: 1.5em;
+    margin: 0 5%;
+  }
+  .aszf-content {
+    padding: 2em 7%;
+  }
+  .contact-form--subpage-format {
     margin: 0 5%;
   }
 }

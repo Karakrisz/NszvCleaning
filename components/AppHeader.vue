@@ -1,13 +1,29 @@
 <script setup>
+onMounted(() => {
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault()
+      const targetId = this.getAttribute('href')?.substring(1)
+      if (targetId) {
+        const targetElement = document.getElementById(targetId)
+        targetElement?.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        })
+      }
+    })
+  })
+})
+
 const leftLinks = [
   { name: 'Kezdőlap', path: '/' },
-  { name: 'Szolgáltatások', path: '/' },
-  { name: 'Referenciák', path: '/' },
+  { name: 'Szolgáltatások', path: '#szolgaltatasok' },
+  { name: 'Referenciák', path: '#rolunk' },
 ]
 
 const rightLinks = [
-  { name: 'Rólunk', path: '/' },
-  { name: 'Kapcsolat', path: '/' },
+  { name: 'Rólunk', path: '#rolunk' },
+  { name: 'Kapcsolat', path: '/ajanlatkeres' },
   { name: 'Ajánlatkérés', path: '/ajanlatkeres' },
 ]
 

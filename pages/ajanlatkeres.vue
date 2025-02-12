@@ -82,17 +82,24 @@ const sendEmail = async () => {
           />
         </div>
         <div class="contact-form__input-group">
-          <p class="contact-form__input-group-description text-color-w">
-            A küldés gombra kattintva elfogadja az Adatvédelmi Tájékoztatót
-          </p>
-          <button type="submit" class="contact-form__button">
-            <span class="contact-form__button-text">Küldés</span>
-            <NuxtImg
-              class="contact-form__button-icon"
-              src="/img/blocks/mail.svg"
-              alt="NSZV takarítás"
-            />
-          </button>
+          <div v-if="!isSent" class="contact-form__input-group-checkbox">
+            <p class="contact-form__input-group-description text-color-w">
+              A küldés gombra kattintva elfogadja az Adatvédelmi Tájékoztatót
+            </p>
+            <button type="submit" class="contact-form__button">
+              <span class="contact-form__button-text">Küldés</span>
+              <NuxtImg
+                class="contact-form__button-icon"
+                src="/img/blocks/mail.svg"
+                alt="NSZV takarítás"
+              />
+            </button>
+          </div>
+          <div v-if="isSent" class="confirmation-message">
+            <p class="confirmation-message__p text-color text-center">
+              Köszönjük az üzenetét, hamarosan felvesszük Önnel a kapcsolatot.
+            </p>
+          </div>
         </div>
       </form>
     </div>

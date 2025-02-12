@@ -8,32 +8,32 @@ useHead({
   <section>
     <div class="aszf-content subpage-two-services-content">
       <h4
-        class="aszf-content__h4 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h4 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         Adatkezelési Tájékoztató
       </h4>
 
-      <p class="aszf-content__p text-color">Elfogadás dátuma: 2024.05.28</p>
+      <p class="aszf-content__p text-color-w">Elfogadás dátuma: 2025.02.01</p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         1. ADATKEZELŐ
       </h5>
-      <p class="aszf-content__p text-color">web@alkuszom.info</p>
+      <p class="aszf-content__p text-color-w">info@nszvtakaritas.hu</p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2. A WEBOLDAL ÜZEMELTETÉSE SORÁN VÉGZETT ADATKEZELÉSEK LEÍRÁSA
       </h5>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.1 A COOKIE-K HASZNÁLATÁVAL KAPCSOLATOS TÁJÉKOZTATÁS
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         <strong>TÁJÉKOZTATÁS</strong> Mi az a cookie? Az Adatkezelő a honlap
         látogatása során úgynevezett cookie-kat (sütiket) használ. A cookie
         betűből és számokból álló információcsomag, amit honlapunk az Ön
@@ -52,11 +52,11 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.1.1. Google Adwords cookie
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Amikor valaki meglátogatja az oldalunkat, a látogató cookie- azonosítója
         hozzáadódik a remarketing listához. A Google cookie-kat – például a NID
         és SID cookie- kat – használ a Google-termékekben, így például a Google
@@ -73,11 +73,11 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.1.2. Facebook pixel (Facebook cookie)
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         A Facebook-képpont olyan kód, amelynek a segítségével a honlapon
         jelentés készül a konverziókról, célközönségek állíthatók össze, és az
         oldal tulajdonosa részletes elemzési adatokat kap a látogatók honlap
@@ -102,11 +102,11 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.2. HÍRLEVÉL-CÉLÚ ADATKEZELÉSEK
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Kezelt adatok: Név, e-mail cím. Az adatkezelés időtartama: Az érintett
         hozzájárulásának visszavonásáig. Az Adatkezelő ötévente felülvizsgálja,
         hogy az érintettek által korábban megadott hozzájárulást az érintettek
@@ -124,11 +124,11 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.3. KAPCSOLATFELVÉTEL SZEMÉLYES ADATOK MEGADÁSA CÉLJÁBÓL
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Erre abban az esetben kerülhet sor, ha például Ön e-mailben vagy
         kapcsolatfelvételi űrlapon az Adatkezelőhöz fordul, hogy valamely
         személyes adatát az Adatkezelő tartsa nyilván és a vallási élettel
@@ -151,22 +151,22 @@ useHead({
         (pl. „megerősítem az adatközlést”) válik hatályossá.
       </p>
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.4. KÖZÖSSÉGI ESEMÉNYEK BEMUTATÁSA
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az Adatkezelő által szervezett eseményekről, programokról bizonyos
         esetekben kép- és / vagy hangfelvétel készülhet. Az Adatkezelő kizárólag
         abban az esetben hoz nyilvánosságra Önt ábrázoló kép- és / vagy
         hangfelvételt, ha Ön ahhoz előzetesen, kifejezetten hozzájárult.
       </p>
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         2.5. A HOZZÁJÁRULÁS IGAZOLHATÓSÁGÁVAL KAPCSOLATBAN KEZELT ADATOK
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         A 2.2. és 2.3. pontok hatálya alá tartozó adatkezelések esetében az
         Adatkezelő által használt informatikai rendszer eltárolja a
         hozzájárulással kapcsolatos informatikai adatokat a későbbi
@@ -179,11 +179,11 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3. AZ ADATKEZELÉS SORÁN ÖNT MEGILLETŐ JOGOK
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az adatkezelés időtartamán belül Önt a Rendelet előírásai szerint az
         alábbi jogok illetik meg: A hozzájárulás visszavonásának joga, a
         személyes adatokhoz és az adatkezeléssel kapcsolatos információkhoz való
@@ -199,29 +199,29 @@ useHead({
         panaszokat legkésőbb 30 napon belül válaszolja meg Adatkezelő, amely
         határidő indokolt esetben további két hónappal meghosszabbítható.
         Kérjük, hogy az Önt megillető jogok gyakorlása érdekében a
-        web@alkuszom.info e-mail címre küldött üzenettel keresse meg az
+        info@nszvtakaritas.hu e-mail címre küldött üzenettel keresse meg az
         Adatkezelőt.
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.1. A hozzájárulás visszavonásának joga:
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ön bármikor jogosult az adatkezeléshez adott hozzájárulást visszavonni,
         ilyen esetben a megadott adatokat rendszereinkből a művelet
         végrehajtásához szükséges, észszerűidőn belül töröljük.
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.2. A személyes adatokhoz való hozzáférés
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         keretein belül Ön jogosult arra, hogy az Adatkezelőtől visszajelzést
         kapjon arra vonatkozóan, hogy személyes adatainak kezelése folyamatban
         van-e, és ha adatkezelés folyamatban van, jogosult arra, hogy: a kezelt
@@ -246,12 +246,12 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.3. Helyesbítéshez való jog
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ön jogosult arra, hogy kérésére Adatkezelő indokolatlan késedelem nélkül
         helyesbítse az Önre vonatkozó pontatlan személyes adatokat. Emellett Ön
         a hiányos személyes adatok kiegészítését is kérelmezheti az
@@ -261,34 +261,34 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.4. Adatkezelés korlátozásához való jog
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ön jogosult arra, hogy kérésére az Adatkezelő korlátozza az
         adatkezelést, ha:
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         a) Ön vitatja a személyes adatok pontosságát, ez esetben a korlátozás
         arra az időtartamra vonatkozik, amely lehetővé teszi, hogy az adatkezelő
         ellenőrizze a személyes adatok pontosságát;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         b) az adatkezelés az Önálláspontja szerint jogellenes, és Ön ellenzi az
         adatok törlését, és ehelyett kéri azok felhasználásának korlátozását;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         c) az Adatkezelőnek már nincs szüksége a személyes adatokra adatkezelés
         céljából, de Ön igényli azokat jogi igények előterjesztéséhez,
         érvényesítéséhez vagy védelméhez.
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ha az adatkezelés korlátozás alá esik, az ilyen személyes adatokat a
         tárolás kivételével csak az Ön hozzájárulásával, vagy jogi igények
         előterjesztéséhez, érvényesítéséhez vagy védelméhez, vagy más
@@ -299,37 +299,37 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.5. Törléshez – elfeledtetéshez való jog
       </h5>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ön jogosult arra, hogy Adatkezelő indokolatlan késedelem nélkül törölje
         az Önre vonatkozó személyes adatokat, ha az alábbi indokok valamelyike
         fennáll:
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         a) a személyes adatokra már nincs szükség abból a célból, amelyből
         azokat Adatkezelő gyűjtötte vagy más módon kezelte;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         b) Ön visszavonja hozzájárulását és az adatkezelésnek nincs más
         jogalapja;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         c) a személyes adatokat Adatkezelő jogellenesen kezelte és ez a panasz
         alapján megállapítást nyert,
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         d) a személyes adatokat az Adatkezelőre alkalmazandó uniós vagy
         tagállami jogban előírt jogi kötelezettség teljesítéséhez törölni kell.
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ha az Adatkezelő bármely jogszerű oknál fogva nyilvánosságra hozta az
         Önről kezelt személyes adatot, és bármely fent megjelölt okból törölni
         köteles azt, az elérhető technológia és a megvalósítás költségeinek
@@ -340,16 +340,16 @@ useHead({
         illetve másodpéldányának törlését.
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         A törlés nem alkalmazandó, amennyiben az adatkezelés szükséges:
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         a) a véleménynyilvánítás szabadságához és a tájékozódáshoz való jog
         gyakorlása céljából;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         b) a személyes adatok kezelését előíró, az adatkezelőre alkalmazandó
         uniós vagy tagállami jog szerinti kötelezettség teljesítése, illetve
         közérdekből vagy az adatkezelőre ruházott közhatalmi jogosítvány
@@ -358,25 +358,25 @@ useHead({
         Adatkezelőnek Ön felé követelése áll fenn és azt még nem teljesítette,
         vagy fogyasztói, adatkezelési panasz intézése van folyamatban).
       </p>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         c) a népegészségügy területét érintő közérdek alapján;
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         d) közérdekű archiválás céljából, tudományos és történelmi kutatási
         célból vagy statisztikai célból;
       </p>
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         e) jogi igények előterjesztéséhez, érvényesítéséhez, illetve védelméhez.
       </p>
 
       <h5
-        class="aszf-content__p blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__p blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.6. Adathordozhatósághoz való jog
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Ön jogosult arra, hogy az Önre vonatkozó, Ön által az Adatkezelő
         rendelkezésére bocsátott személyes adatokat tagolt, széles körben
         használt, géppel olvasható formátumban megkapja (pl. xml, JSON, vagy csv
@@ -386,46 +386,46 @@ useHead({
         adatokat a rendelkezésére bocsátotta, ha:
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         a) az adatkezelés jogalapja az Ön kifejezett hozzájárulása, és
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az adatok hordozhatóságához való jog gyakorlása során Ön jogosult arra,
         hogy – ha ez technikailag megvalósítható – kérje a személyes adatok
         adatkezelők közötti közvetlen továbbítását.
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az adathordozhatósághoz való jog gyakorlása nem sértheti a személyes
         adatok törlésére vonatkozó rendelkezéseket, és nem érintheti hátrányosan
         mások jogait és szabadságait.
       </p>
 
       <h5
-        class="szf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         3.7. További információk
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az Ön általmegadott személyes adatok nem kerülnek továbbításra harmadik
         személy vagy szervezet számára.
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az Ön által megadott személyes adatokkal az Adatkezelő nem végez
         automatizált döntéshozatalnak minősülő adatkezelési műveleteket, továbbá
         nem használja fel a személyes adatokat profilalkotás céljából sem.
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         4. ADATBIZTONSÁGI INTÉZKEDÉSEK
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az Adatkezelő kijelenti, hogy megfelelő biztonsági intézkedéseket hozott
         annak érdekében, hogy a személyes adatok védje a jogosulatlan
         hozzáférés, megváltoztatás, továbbítás, nyilvánosságra hozatal, törlés
@@ -438,12 +438,12 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         5. JOGORVOSLATI LEHETŐSÉGEK
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Amennyiben Ön szerint az Adatkezelő megsértette valamely, az
         adatkezelésre vonatkozó rendelkezést, vagy nem teljesítette valamely
         kérelmét, akkor vélelmezett jogellenes adatkezelés megszüntetése
@@ -453,7 +453,7 @@ useHead({
         429616918 cím: 1055 Budapest, Falk Miksa utca 9-11.).
       </p>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Tájékoztatjuk emellett arról is, hogy az adatkezelésre vonatkozó
         rendelkezések megsértése esetén, vagy ha az Adatkezelő nem teljesítette
         valamely kérelmét, akkor az Adatkezelővel szemben polgári pert indíthat
@@ -461,12 +461,12 @@ useHead({
       </p>
 
       <h5
-        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color"
+        class="aszf-content__h5 blog-box__text__h3 text-transform-uppercase text-color-w"
       >
         6. ADATKEZELÉSI TÁJÉKOZTATÓ MÓDOSÍTÁSA
       </h5>
 
-      <p class="aszf-content__p text-color">
+      <p class="aszf-content__p text-color-w">
         Az Adatkezelő fenntartja a jogot, hogy jelen adatkezelési tájékoztatót
         az adatkezelés célját és jogalapját nem érintő módon módosítsa. A
         tájékoztatómódosulásáról az Adatkezelő az esetleges módosítások hatályba
@@ -474,6 +474,11 @@ useHead({
         általuk kapcsolattartási célból megadott e-mail címre küldendő
         tájékoztatással.
       </p>
+
+      <NuxtLink to="/" class="go-back-button">
+        <span class="go-back-button__icon">&#8592;</span>
+        <span class="go-back-button__text">Vissza a főoldalra</span>
+      </NuxtLink>
     </div>
   </section>
 </template>

@@ -37,7 +37,7 @@ const latestPosts = itemsPost.value?.slice(-3) || []
     </div>
   </section>
 
-  <section class="split-section__container__crown">
+  <section class="split-section__container__crown" id="szolgaltatasok">
     <div class="services d-flex">
       <div class="services__item services__item--office">
         <div class="services__icon services__icon--crown"></div>
@@ -98,7 +98,7 @@ const latestPosts = itemsPost.value?.slice(-3) || []
       </div>
     </div>
   </section>
-  <section class="split-section about_section">
+  <section class="split-section about_section" id="rolunk">
     <div class="split-section__container d-flex">
       <div class="split-section__image">
         <img
