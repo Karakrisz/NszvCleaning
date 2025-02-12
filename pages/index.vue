@@ -52,7 +52,9 @@ const latestPosts = itemsPost.value?.slice(-3) || []
           Film stúdiók higiénikus tisztántartása
         </h3>
         <p class="services__button-container">
-          <a href="#" class="services__button">Érdekel</a>
+          <NuxtLink to="/ajanlatkeres" class="services__button">
+            Érdekel
+          </NuxtLink>
         </p>
       </div>
 
@@ -70,7 +72,9 @@ const latestPosts = itemsPost.value?.slice(-3) || []
         <h3 class="services__list-item">Speciális takarítási szolgáltatások</h3>
 
         <p class="services__button-container">
-          <a href="#" class="services__button">Érdekel</a>
+          <NuxtLink to="/ajanlatkeres" class="services__button">
+            Érdekel
+          </NuxtLink>
         </p>
       </div>
 
@@ -87,7 +91,9 @@ const latestPosts = itemsPost.value?.slice(-3) || []
         <h3 class="services__list-item">Költözés előtti és utáni takarítás</h3>
 
         <p class="services__button-container">
-          <a href="#" class="services__button">Érdekel</a>
+          <NuxtLink to="/ajanlatkeres" class="services__button">
+            Érdekel
+          </NuxtLink>
         </p>
       </div>
     </div>
