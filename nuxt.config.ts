@@ -72,9 +72,19 @@ export default defineNuxtConfig({
   ],
 
   site: {
-    url: 'https://www.alkuszom.info',
+    url: 'https://www.nszvtakaritas.hu',
     trailingSlash: true,
   },
 
-  compatibilityDate: '2025-01-15',
+  sitemap: {
+    sources: ['/api/sitemap'],
+    // defaults: { priority: 0.7 },
+  },
+
+  nitro: {
+    prerender: {
+      routes: ['/sitemap.xml'],
+    },
+  },
+  compatibilityDate: '2025-02-23',
 })

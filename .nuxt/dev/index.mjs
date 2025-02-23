@@ -337,7 +337,13 @@ const _inlineRuntimeConfig = {
           "Content-Type": "application/xslt+xml"
         }
       },
-      "/sitemap.xml": {},
+      "/sitemap.xml": {
+        "headers": {
+          "Content-Type": "text/xml; charset=UTF-8",
+          "Cache-Control": "public, max-age=600, must-revalidate",
+          "X-Sitemap-Prerendered": "2025-02-23T12:58:34.721Z"
+        }
+      },
       "/_nuxt/builds/meta/**": {
         "headers": {
           "cache-control": "public, max-age=31536000, immutable"
@@ -416,7 +422,7 @@ const _inlineRuntimeConfig = {
       {
         "_priority": -3,
         "_context": "nuxt-site-config:config",
-        "url": "https://www.alkuszom.info",
+        "url": "https://www.nszvtakaritas.hu",
         "trailingSlash": true
       }
     ],
@@ -1003,6 +1009,8 @@ function publicAssetsURL(...path) {
   const publicBase = app.cdnURL || app.baseURL;
   return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
 }
+
+const defineSitemapEventHandler = defineEventHandler;
 
 function normalizeSiteConfig(config) {
   if (typeof config.indexable !== "undefined")
@@ -2261,9 +2269,11 @@ const _gsuoSa = lazyEventHandler(() => {
   return useBase(opts.baseURL, ipxHandler);
 });
 
+const _lazy_eyIVsB = () => Promise.resolve().then(function () { return sitemap$1; });
 const _lazy_tZXaoQ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
+  { route: '/api/sitemap', handler: _lazy_eyIVsB, lazy: true, middleware: false, method: undefined },
   { route: '/__nuxt_error', handler: _lazy_tZXaoQ, lazy: true, middleware: false, method: undefined },
   { route: '', handler: _mgfGc3, lazy: false, middleware: true, method: undefined },
   { route: '/__site-config__/debug.json', handler: _kZWBsM, lazy: false, middleware: false, method: undefined },
@@ -2474,6 +2484,10 @@ const errorDev = /*#__PURE__*/Object.freeze({
 
 const sources$1 = [
     {
+        "sourceType": "user",
+        "fetch": "/api/sitemap"
+    },
+    {
         "context": {
             "name": "sitemap:urls",
             "description": "Set with the `sitemap.urls` config."
@@ -2523,6 +2537,32 @@ const sources = {};
 const childSources = /*#__PURE__*/Object.freeze({
   __proto__: null,
   sources: sources
+});
+
+const sitemap = defineSitemapEventHandler(async (e) => {
+  try {
+    const response = await fetch(
+      "https://api.nszvtakaritas.hu/json-posts"
+    );
+    if (!response.ok) {
+      throw new Error("Failed to fetch posts");
+    }
+    const posts = await response.json();
+    return posts.map((post) => {
+      return {
+        loc: `/posts/${post.slug}`,
+        lastmod: post.modifiedAt ? new Date(post.modifiedAt).toISOString() : new Date(post.created_at).toISOString()
+      };
+    });
+  } catch (error) {
+    console.error("Error fetching posts for sitemap:", error);
+    return [];
+  }
+});
+
+const sitemap$1 = /*#__PURE__*/Object.freeze({
+  __proto__: null,
+  default: sitemap
 });
 
 const Vue3 = version[0] === "3";
