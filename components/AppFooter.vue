@@ -3,10 +3,10 @@
     <div class="footer">
       <div class="footer__card">
         <div class="footer__info">
-          <h2 class="footer__title">N. Sz. V. Cleaning</h2>
-          <a class="footer__contact" href="mailto:info@nszvtakaritas.hu">
+          <h2 class="footer__title">N. SZ. V. Cleaning</h2>
+          <a class="footer__contact" href="mailto:nszvtakaritas@gmail.com">
             <span class="footer__icon footer__icon--email"></span>
-            info@nszvtakaritas.hu
+            nszvtakaritas@gmail.com
           </a>
           <a class="footer__contact" href="tel:+36304382677">
             <span class="footer__icon footer__icon--phone"></span>

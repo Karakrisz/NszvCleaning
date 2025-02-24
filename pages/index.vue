@@ -19,6 +19,8 @@ const isSent = ref(false)
 const sendEmail = async () => {
   try {
     await nuxtApp.$mail.send({
+      from: 'info@nszvtakaritas.hu',
+      to: 'nszvtakaritas@gmail.com',
       subject: `Új üzenetet küldött - ${form.value.name}`,
       html: `
         <p><strong>Name:</strong> ${form.value.name}</p>
