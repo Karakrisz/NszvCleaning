@@ -11,7 +11,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'NSZV Takarítás',
+      title: 'NSZV Takarítás - Lakás takarítás Budapest',
       htmlAttrs: {
         lang: 'hu',
       },
