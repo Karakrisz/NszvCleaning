@@ -167,6 +167,75 @@ const sendEmail = async () => {
       </div>
     </div>
   </section>
+  <section class="disinfection">
+    <h2 class="disinfection__title">Fertőtlenítésben is otthon vagyunk!</h2>
+
+    <div class="disinfection__cards">
+      <!-- Ozone disinfection card -->
+      <div class="disinfection-card">
+        <div class="disinfection-card__icon-wrapper">
+          <span class="disinfection-card__icon">
+            <img
+              src="/img/ozon.svg"
+              alt="NSZV takarítás"
+              class="isinfection-card__icon__img"
+            />
+          </span>
+          <h3 class="disinfection-card__title">Ózonos fertőtlenítés</h3>
+        </div>
+        <div class="disinfection-card__tag">VEGYSZERMENTES TISZTASÁG</div>
+        <p class="disinfection-card__description">
+          Az ózon rendkívül hatékony fertőtlenítő, amely vegyszermentesen
+          pusztítja el a vírusokat, baktériumokat, penészgombákat és kellemetlen
+          szagokat. Mivel gáz halmazállapotú, minden apró résbe és felületre
+          eljut, így teljes körű tisztaságot biztosít. Különösen ajánlott
+          allergiásoknak, irodákba, autókba vagy olyan helyiségekbe, ahol fontos
+          a friss levegő és a higiénia.
+        </p>
+        <p class="disinfection-card__cta">
+          Szeretnéd friss és tiszta levegővel megtölteni a teret? Kérj ózonos
+          fertőtlenítést tőlünk!
+        </p>
+        <div class="disinfection-card__link-box">
+          <NuxtLink to="/ajanlatkeres" class="disinfection-card__button"
+            >Ajánlatkérés</NuxtLink
+          >
+        </div>
+      </div>
+
+      <!-- Cold fog disinfection card -->
+      <div class="disinfection-card">
+        <div class="disinfection-card__icon-wrapper">
+          <span class="disinfection-card__icon">
+            <img
+              src="/img/hideg.svg"
+              alt="NSZV takarítás"
+              class="isinfection-card__icon__img"
+            />
+          </span>
+          <h3 class="disinfection-card__title">Hidegködös fertőtlenítés</h3>
+        </div>
+        <div class="disinfection-card__tag">HOSSZAN TARTÓ VÉDELEM</div>
+        <p class="disinfection-card__description">
+          A hidegködös eljárás során egy speciális fertőtlenítő folyadékot
+          mikroszkopikus cseppekké alakítunk, amelyek lebegve beborítanak minden
+          felületet. Ez az eljárás nemcsak azonnali fertőtlenítést biztosít,
+          hanem egy védőréteget is képez, amely segít megakadályozni a kórokozók
+          újbóli megtelepedését. Ideális nagyobb helyiségek, óvodák, éttermek
+          vagy egészségügyi intézmények fertőtlenítésére.
+        </p>
+        <p class="disinfection-card__cta">
+          Hosszú távú védelemre van szükséged? Próbáld ki a hidegködös
+          fertőtlenítést!
+        </p>
+        <div class="disinfection-card__link-box">
+          <NuxtLink to="/ajanlatkeres" class="disinfection-card__button"
+            >Ajánlatkérés</NuxtLink
+          >
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="contact-form">
     <div class="contact-form__container">
       <h5 class="contact-form__title">Tegyük együtt tisztábbá a világot!</h5>
